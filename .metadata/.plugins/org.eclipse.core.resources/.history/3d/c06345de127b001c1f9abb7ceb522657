@@ -1,0 +1,54 @@
+package socketsServer;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.net.ServerSocket;
+
+public class Enchufe implements Runnable{
+	
+	
+	public Enchufe () {
+		
+		Thread hilo = new Thread(this);
+		
+		hilo.start();
+		
+	}
+	
+	
+
+	@Override
+	public void run() {
+
+		
+		
+		try {
+			ServerSocket conexionRecibida = new ServerSocket(9999);
+			
+			String ip, nick, mensaje;
+			
+			Paquete
+			
+			
+			
+			ObjectInputStream flujoEntrada = new ObjectInputStream();
+			
+			while(true) {
+			
+			
+			}
+		
+		
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+				e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+	
+	
+}

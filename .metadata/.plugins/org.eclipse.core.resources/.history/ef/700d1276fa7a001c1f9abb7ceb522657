@@ -1,0 +1,18 @@
+package sockets;
+
+import java.net.Socket;
+
+class Enchufe {
+
+	
+	public void conectarServer() {
+		
+		Socket conexion = new Socket("192.168.42.228", 9999);
+		
+		
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,79 @@
+package socketsServer;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+
+import paqueteDatos.PaqueteDatos;
+
+public class Enchufe implements Runnable{
+	
+	
+	public Enchufe () {
+		
+		Thread hilo = new Thread(this);
+		
+		hilo.start();
+		
+	}
+	
+	
+
+	@Override
+	public void run() {
+
+		
+		try {
+			
+			ServerSocket conexionRecibida = new ServerSocket(9999);
+			
+			String ip, nick, mensaje;
+			
+			PaqueteDatos datosRecibidos;
+			
+			ArrayList<String> ips = new ArrayList<String>();
+			
+			while(true) {
+				
+				Socket conexionAceptada = conexionRecibida.accept();
+				
+				ObjectInputStream flujoEntrada = new ObjectInputStream(conexionAceptada.getInputStream());
+				
+				datosRecibidos =(PaqueteDatos) flujoEntrada.readObject();
+				
+				
+				ip = datosRecibidos.getIp();
+				nick = datosRecibidos.getNick();
+				mensaje = datosRecibidos.getMensaje();
+				
+				if(datosRecibidos.getMensaje().equals("online")) {
+					
+					InetAddress clienteConectado = conexionAceptada.getInetAddress();
+					System.out.println(clienteConectado);
+					String ipRemota = clienteConectado.getHostAddress();
+					System.out.println(ipRemota);
+				}
+				
+				
+				
+				
+			}
+		
+		
+		
+		} catch (IOException | ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+				e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+	
+	
+}

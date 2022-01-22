@@ -1,0 +1,17 @@
+package main;
+
+import socketsServer.Enchufe;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		MarcoServer marcoServer = new MarcoServer();
+		
+		Enchufe enchufe = new Enchufe();
+		
+		
+		
+	}
+
+}

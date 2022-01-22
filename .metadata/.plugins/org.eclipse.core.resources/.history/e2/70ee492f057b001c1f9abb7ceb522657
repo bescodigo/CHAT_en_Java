@@ -1,0 +1,14 @@
+package main;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Marco form = new Marco();
+		
+		Enchufe conexion = new Enchufe();
+		
+	}
+}
+
+
+

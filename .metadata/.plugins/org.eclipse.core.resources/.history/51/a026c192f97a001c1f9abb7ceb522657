@@ -1,0 +1,43 @@
+package sockets;
+
+class Enchufe {
+
+	public Enchufe(
+			
+			String direccion, 
+			int puerta
+			
+			) {
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	public String getDireccion() {
+		return Direccion;
+	}
+	public void setDireccion(String direccion) {
+		Direccion = direccion;
+	}
+
+
+	public int getPuerta() {
+		return Puerta;
+	}
+
+
+	public void setPuerta(int puerta) {
+		Puerta = puerta;
+	}
+
+
+	private String Direccion;
+	private int Puerta;
+	
+	
+	
+}

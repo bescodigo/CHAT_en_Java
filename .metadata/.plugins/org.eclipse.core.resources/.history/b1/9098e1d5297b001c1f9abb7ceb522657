@@ -1,0 +1,48 @@
+package main;
+
+import java.awt.TextArea;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class MarcoServer extends JFrame{
+	
+	public MarcoServer() {
+		
+		LaminaServer lamina = new LaminaServer();
+		
+		
+		this.setBounds(111,111,666,666);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		this.add(lamina);		
+		
+		this.setVisible(true);
+		this.setTitle("ServerMessenger");
+		
+	}
+	
+	
+	public class LaminaServer extends JPanel{
+		
+		public LaminaServer() {
+			
+			this.setVisible(true);
+			
+			area = new JTextArea(20, 40);
+			
+			this.add(area);
+			
+			
+		}
+		
+		
+		JTextArea area;
+		
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,18 @@
+package main;
+
+import javax.swing.JFrame;
+
+public class Marco extends JFrame{
+	
+	public Marco() {
+		
+		this.setBounds(111, 111, 666, 666);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("Messenger");
+		this.setVisible(true);
+		
+	}
+	
+}
+
+

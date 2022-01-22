@@ -1,0 +1,36 @@
+package main;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MarcoServer extends JFrame{
+	
+	public MarcoServer() {
+		
+		LaminaServer lamina = new LaminaServer();
+		
+		
+		this.setBounds(111,111,666,666);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		this.add(lamina);		
+		
+		this.setVisible(true);
+		this.setTitle("ServerMessenger");
+		
+	}
+	
+	
+	public class LaminaServer extends JPanel{
+		
+		public LaminaServer() {
+			
+			this.setBounds(11,11, 100,100);
+			this.setVisible(true);
+			
+		}
+		
+	}
+	
+	
+}

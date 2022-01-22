@@ -1,0 +1,31 @@
+package socketsServer;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.net.ServerSocket;
+
+public class Enchufe {
+	
+	public void aceptarClientes() {
+		
+		try {
+			ServerSocket conexionRecibida = new ServerSocket();
+			
+			ObjectInputStream flujoEntrada = new ObjectInputStream();
+			
+			
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+	}
+	
+	
+}

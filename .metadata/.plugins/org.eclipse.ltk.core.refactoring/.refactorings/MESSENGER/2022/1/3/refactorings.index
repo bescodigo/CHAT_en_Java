@@ -1,0 +1,9 @@
+1642796442404	Encapsulate field 'Direccion'
+1642796463141	Encapsulate field 'Puerta'
+1642797240694	Delete element
+1642797583354	Encapsulate field 'ip'
+1642797589988	Encapsulate field 'nick'
+1642797594217	Encapsulate field 'mensaje'
+1642797600050	Encapsulate field 'ips'
+1642798029682	Rename type 'Paquete'
+1642806938262	Copy package
